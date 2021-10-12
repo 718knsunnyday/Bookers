@@ -1,15 +1,16 @@
-<div class="field">
-  <strong>Title:
-  <%= @book.title %></strong>
-</div>
+<p>
+  <strong>Title:</strong>
+  <%= @book.title %>
+</p>
 
-<<div class="field">>
-  <strong>Body:
-  <%= @book.body %></strong>
-</div>
+<p>
+  <strong>Body:</strong>
+  <%= @book.body %>
+</p>
 
-<div class="action">
-  <%= link_to "edit", edit_book_path %>
-  "|"
-  <%= link_to "back", books_path %>
-</div>
+<a class="edit">
+  <%= link_to "Edit", edit_book_path %>
+  </a>|
+<a class="back">
+  <%= link_to "Back", books_path %>
+</a>
