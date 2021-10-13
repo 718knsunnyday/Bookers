@@ -1,3 +1,11 @@
+<% if flash[:sucess] %>
+  <p class= "sucess"><%= flash[:sucess] %></p>
+<% end %>
+
+<% if flash[:notice] %>
+  <p class= "sucess"><%= flash[:notice] %></p>
+<% end %>
+
 <p>
   <strong>Title:</strong>
   <%= @book.title %>
